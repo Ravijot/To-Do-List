@@ -1,0 +1,13 @@
+
+#x
+{
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+   /* border: solid black 2px;*/
+}
+#inplist li.done
+{
+    color: #6c757d;
+    text-decoration: line-through;
+}

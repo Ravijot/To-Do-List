@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+       
+        
+        <!--importing bootstap-->
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script defer src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!--heading-->
+        <h2 id ='x' class="p-3 mb-2 bg-warning text-dark rounded-pill shadow p-3 rounded" style ="text-align: center"><b>Todo List</b></h2>
+        <div class="container">
+              
+            <!--task box-->
+            <div class="form-group">
+                <label for="inptext"><B>Enter your task</B></label>
+                <input  id="inptext"type="text" class="form-control" id="exampleInputEmail1" aria-describedby="description of task">
+                <small id="emailHelp" class="form-text text-muted">Description of task</small>
+                <!--buttons-->
+            </div>
+            <div style="text-align: center;">
+            <button id="addbtn" type="button" class="btn btn-primary p-1 mb-2" style="width: 45%;">Add  <i class="fa fa-plus"></i></button>
+            <button id="clearbtn" type="button" class="btn btn-success p-1 mb-2"style="width: 45%;">Reset   <i class="fas fa-backspace"></i>
+            </button>
+            </div>
+             <div style="text-align: center;">
+            <button id='sortbtn'type="button" class="btn btn-danger p-1 mb-2"style="width: 45%;">Sort  <i class="fa fa-sort-amount-down"></i></button>
+            <button id='bcleanup' type="button" class="btn btn-dark p-1 mb-2"style="width: 45%;">Clean up
+                 <i class="fas fa-trash-alt"></i></i></button>
+             </div>
+
+             <!--list-->
+             <div>
+                <ul id="inplist" class="list-group">
+                    
+                  </ul>
+             </div>
+
+
+        </div>
+       
+    </body>
+</html>
